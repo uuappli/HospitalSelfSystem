@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1942CE42-D06B-450C-880F-586009132A5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HospitalSelfSystem</RootNamespace>
+    <AssemblyName>HospitalSelfSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BSE.Windows.Forms">
+      <HintPath>..\..\AutoRegisterManager\AutoRegisterManager\bin\Debug\BSE.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="ButtonEx">
+      <HintPath>..\..\AutoRegisterManager\AutoRegisterManager\bin\Debug\ButtonEx.dll</HintPath>
+    </Reference>
+    <Reference Include="CardInterface">
+      <HintPath>..\..\AutoRegisterManager\AutoRegisterManager\bin\Debug\CardInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAccess, Version=8.4.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="RM.ReportEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=709dcf5f45ccf05a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SKYNET_HIS2013\HIS2011CODEV7.7\公共程序集\RM.ReportEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SystemFramework, Version=8.4.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SystemFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormConsumption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsumption.Designer.cs">
+      <DependentUpon>FormConsumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBackstageManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackstageManage.Designer.cs">
+      <DependentUpon>FrmBackstageManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBalance.Designer.cs">
+      <DependentUpon>FrmBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCardConsumeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCardConsumeDetail.Designer.cs">
+      <DependentUpon>FrmCardConsumeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCardRechargeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCardRechargeDetail.Designer.cs">
+      <DependentUpon>FrmCardRechargeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommData.Designer.cs">
+      <DependentUpon>FrmCommData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGetCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGetCard.Designer.cs">
+      <DependentUpon>FrmGetCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHOSSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHOSSummary.Designer.cs">
+      <DependentUpon>FrmHOSSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInMoney.Designer.cs">
+      <DependentUpon>FrmInMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInMoneyMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInMoneyMsg.Designer.cs">
+      <DependentUpon>FrmInMoneyMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain4.Designer.cs">
+      <DependentUpon>FrmMain4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain2.Designer.cs">
+      <DependentUpon>FrmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewDoctor.Designer.cs">
+      <DependentUpon>FrmNewDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewOfficeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewOfficeList.Designer.cs">
+      <DependentUpon>FrmNewOfficeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPassWord.Designer.cs">
+      <DependentUpon>FrmPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecharge.Designer.cs">
+      <DependentUpon>FrmRecharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReg.Designer.cs">
+      <DependentUpon>FrmReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegisterReadCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterReadCard.Designer.cs">
+      <DependentUpon>FrmRegisterReadCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTakeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTakeCard.Designer.cs">
+      <DependentUpon>FrmTakeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWaitCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaitCard.Designer.cs">
+      <DependentUpon>FrmWaitCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarn.Designer.cs">
+      <DependentUpon>FrmWarn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYesNoAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYesNoAlert.Designer.cs">
+      <DependentUpon>FrmYesNoAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inc\DoctorList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inc\DoctorList.Designer.cs">
+      <DependentUpon>DoctorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inc\IcMsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inc\IcMsg.Designer.cs">
+      <DependentUpon>IcMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inc\MyGroupBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inc\MyGroupBox.Designer.cs">
+      <DependentUpon>MyGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inc\OfficeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inc\OfficeItem.Designer.cs">
+      <DependentUpon>OfficeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAlert.Designer.cs">
+      <DependentUpon>MyAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMsg.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PutCardUniversal.cs" />
+    <Compile Include="Register\AES.cs" />
+    <Compile Include="Register\DESEncrypt.cs" />
+    <Compile Include="Register\MD5Crytion.cs" />
+    <Compile Include="Register\RegHelper.cs" />
+    <Compile Include="Register\RSACryption.cs" />
+    <Compile Include="SdkService\D1000Card.cs" />
+    <Compile Include="SdkService\DC_D3.cs" />
+    <Compile Include="SdkService\IDCard.cs" />
+    <Compile Include="SdkService\K101SendCard.cs" />
+    <Compile Include="SdkService\M100ICReadCard.cs" />
+    <Compile Include="SdkService\M100ReadCard.cs" />
+    <Compile Include="SdkService\Money.cs" />
+    <Compile Include="SdkService\Print.cs" />
+    <Compile Include="SdkService\RF610CARD.cs" />
+    <Compile Include="SDK\CVRSDK.cs" />
+    <Compile Include="SDK\DMoney.cs" />
+    <Compile Include="SDK\DPrinter.cs" />
+    <Compile Include="SDK\SLE_302H_DLL\CardSLE_302H.cs" />
+    <Compile Include="SDK\SLE_302H_DLL\SLE_302H_DLL.cs" />
+    <Compile Include="SkyComm.cs" />
+    <EmbeddedResource Include="FormConsumption.resx">
+      <DependentUpon>FormConsumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackstageManage.resx">
+      <DependentUpon>FrmBackstageManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBalance.resx">
+      <DependentUpon>FrmBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCardConsumeDetail.resx">
+      <DependentUpon>FrmCardConsumeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCardRechargeDetail.resx">
+      <DependentUpon>FrmCardRechargeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommData.resx">
+      <DependentUpon>FrmCommData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGetCard.resx">
+      <DependentUpon>FrmGetCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHOSSummary.resx">
+      <DependentUpon>FrmHOSSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInMoney.resx">
+      <DependentUpon>FrmInMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInMoneyMsg.resx">
+      <DependentUpon>FrmInMoneyMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain4.resx">
+      <DependentUpon>FrmMain4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain2.resx">
+      <DependentUpon>FrmMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewDoctor.resx">
+      <DependentUpon>FrmNewDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewOfficeList.resx">
+      <DependentUpon>FrmNewOfficeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPassWord.resx">
+      <DependentUpon>FrmPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecharge.resx">
+      <DependentUpon>FrmRecharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReg.resx">
+      <DependentUpon>FrmReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterReadCard.resx">
+      <DependentUpon>FrmRegisterReadCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTakeCard.resx">
+      <DependentUpon>FrmTakeCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaitCard.resx">
+      <DependentUpon>FrmWaitCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarn.resx">
+      <DependentUpon>FrmWarn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYesNoAlert.resx">
+      <DependentUpon>FrmYesNoAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inc\DoctorList.resx">
+      <DependentUpon>DoctorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inc\IcMsg.resx">
+      <DependentUpon>IcMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inc\MyGroupBox.resx">
+      <DependentUpon>MyGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inc\OfficeItem.resx">
+      <DependentUpon>OfficeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAlert.resx">
+      <DependentUpon>MyAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoServiceSDK\AutoServiceSDK.csproj">
+      <Project>{778be1a8-0813-43a8-8263-1ddf34943ad5}</Project>
+      <Name>AutoServiceSDK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\index.fw.png" />
+    <Content Include="Image\一个月.png" />
+    <Content Include="Image\三个月.png" />
+    <Content Include="Image\二个月.png" />
+    <Content Include="Image\余额查询.png" />
+    <Content Include="Image\医院介绍.png" />
+    <Content Include="Image\取消.png" />
+    <Content Include="Image\小卡.png" />
+    <Content Include="Image\提醒.png" />
+    <Content Include="Image\查询余额.fw.png" />
+    <Content Include="Image\消费查询 %282%29.png" />
+    <Content Include="Image\消费查询.png" />
+    <Content Include="Image\点击发卡.png" />
+    <Content Include="Image\确认.png" />
+    <Content Include="Image\自助充值.png" />
+    <Content Include="Image\自助发卡.png" />
+    <Content Include="Image\自助发卡new.png" />
+    <Content Include="Image\自助发卡new2.png" />
+    <Content Include="Image\自助发卡首页.fw.png" />
+    <Content Include="Image\自助挂号.png" />
+    <Content Include="Image\读卡页面.png" />
+    <Content Include="Image\返回上页.png" />
+    <Content Include="Image\退出.png" />
+    <Content Include="Image\退出发卡.png" />
+    <Content Include="Image\银行.png" />
+    <Content Include="SDK\SLE_302H_DLL\ICcard_dll.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

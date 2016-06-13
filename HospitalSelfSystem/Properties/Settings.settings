@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HospitalSelfSystem.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="发卡器端口" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="钞箱端口" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="读卡器端口" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="读卡器类型" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M100</Value>
+    </Setting>
+    <Setting Name="卡类型" Type="System.String" Scope="User">
+      <Value Profile="(Default)">磁条卡</Value>
+    </Setting>
+    <Setting Name="医院名称" Type="System.String" Scope="User">
+      <Value Profile="(Default)">大沥医院</Value>
+    </Setting>
+    <Setting Name="运行模式" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DEMO</Value>
+    </Setting>
+    <Setting Name="数据库名称" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="用户名" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="密码" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="医院LOGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">默认logo.png</Value>
+    </Setting>
+    <Setting Name="数据库IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="系统管理密码" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="数据库类型" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MSSQLServer</Value>
+    </Setting>
+    <Setting Name="识别面额" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">16777215</Value>
+    </Setting>
+    <Setting Name="启用医院介绍" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="启用自助发卡" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="启用消费查询" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="启用自助充值" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="启用余额查询" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="启用自助挂号" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

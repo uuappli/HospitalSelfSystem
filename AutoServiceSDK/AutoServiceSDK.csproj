@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{778BE1A8-0813-43A8-8263-1DDF34943AD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoServiceSDK</RootNamespace>
+    <AssemblyName>AutoServiceSDK</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemFramework, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\HospitalSelfSystem\bin\Debug\SystemFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ISdkService\ICCTalkService.cs" />
+    <Compile Include="ISdkService\IHealthCardService.cs" />
+    <Compile Include="ISdkService\IIdentityCardService.cs" />
+    <Compile Include="ISdkService\IMoneyService.cs" />
+    <Compile Include="ISdkService\IPrintService.cs" />
+    <Compile Include="ISdkService\ITakeCardService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SdkData\IDCardInfro.cs" />
+    <Compile Include="SdkService\CashCodeMoney.cs" />
+    <Compile Include="SdkService\CCTalkService.cs" />
+    <Compile Include="SdkService\CVRCard.cs" />
+    <Compile Include="SdkService\PosPrint.cs" />
+    <Compile Include="SDK\CCTalk_DLL.cs" />
+    <Compile Include="SDK\CRTCard.cs" />
+    <Compile Include="SDK\CVR_IDENTITY_DLL.cs" />
+    <Compile Include="SDK\DC_D3_DLL.cs" />
+    <Compile Include="SDK\CASHCODE_MONEY_DLL.cs" />
+    <Compile Include="SDK\K101_DLL.cs" />
+    <Compile Include="SDK\M100IC_DLL.cs" />
+    <Compile Include="SDK\M100_DLL.cs" />
+    <Compile Include="SDK\POS_PRINT_DLL.cs" />
+    <Compile Include="SDK\ReadIDCardSS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CCTalk\CCTalkApi.dll" />
+    <Content Include="CCTalk\ccTalkDll.h" />
+    <Content Include="CCTalk\POSAPI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CCTalk\CCTalkApi.lib" />
+    <None Include="CCTalk\POSAPI.lib" />
+    <None Include="CCTalk\硬币找零API.doc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
